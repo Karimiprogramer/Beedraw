@@ -1,0 +1,13 @@
+.[suo]
+
+BeeDraw/bin
+BeeDraw/obj
+BeeDraw/.vs
+
+BeeDraw.Core/bin
+BeeDraw.Core/obj
+BeeDraw.Core/.vs
+
+BeeDraw.Database/bin
+BeeDraw.Database/obj
+BeeDraw.Database/.vs
