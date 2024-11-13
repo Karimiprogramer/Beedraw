@@ -1,6 +1,6 @@
 ﻿using BeeDraw.Database.SeedWorks.Base;
 
-namespace BeeDraw.Database.Models;
+namespace BeeDraw.Database.Models.User;
 
 public class TaskTbl:EntityBase
 {

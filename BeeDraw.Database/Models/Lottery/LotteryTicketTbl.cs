@@ -1,9 +1,12 @@
-﻿using BeeDraw.Database.SeedWorks.Base;
+﻿using BeeDraw.Database.Models.User;
+using BeeDraw.Database.SeedWorks.Base;
 
-namespace BeeDraw.Database.Models;
+namespace BeeDraw.Database.Models.Lottery;
 
 public class LotteryTicketTbl: EntityBase
 {
+    public bool IsWinner { get; set; }
+    
     public int LotteryId { get; set; }  
     public LotteryTbl? Lottery { get; set; }
 
