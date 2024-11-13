@@ -13,6 +13,6 @@ public class LotteryTicketTbl: EntityBase
     public int UserId { get; set; }  
     public UserTbl? User { get; set; }
 
-    public string TicketNumber { get; set; } 
+    public int TicketCount { get; set; } 
     public DateTime DatePurchased { get; set; }
 }

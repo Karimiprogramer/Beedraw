@@ -5,11 +5,11 @@ namespace BeeDraw.Database.Models.User;
 
 public class FriendshipTbl:EntityBase
 {
-    public int UserId { get; set; }
-    [ForeignKey("UserId")]
+    public int SenderId { get; set; }
+    [ForeignKey("SenderId")]
     public UserTbl? User { get; set; }
 
-    public int FriendId { get; set; }
-    [ForeignKey("FriendId")]
+    public int ReceiverId { get; set; }
+    [ForeignKey("ReceiverId")]
     public UserTbl? Friend { get; set; }
 }

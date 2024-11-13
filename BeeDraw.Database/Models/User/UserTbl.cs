@@ -23,8 +23,10 @@ public class UserTbl:EntityBase
     [MaxLength(20)]
     public required string PhoneNumber { get; set; }
 
+    [MaxLength(Int32.MaxValue)]
+    public string? WalletAddress { get; set; }
 
-    public string WalletAddress { get; set; }
+    public int RefererId { get; set; }
 
     
     public DateTime DateJoined { get; set; } = DateTime.UtcNow;
