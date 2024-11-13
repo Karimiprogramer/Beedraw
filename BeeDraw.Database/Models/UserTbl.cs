@@ -20,9 +20,12 @@ public class UserTbl:EntityBase
     [MaxLength(10)]
     public required string LanguageCode { get; set; }
 
+    [MaxLength(20)]
     public required string PhoneNumber { get; set; }
 
-    
+
+    public string WalletAddress { get; set; }
+
     
     public DateTime DateJoined { get; set; } = DateTime.UtcNow;
 
@@ -31,6 +34,6 @@ public class UserTbl:EntityBase
     public bool IsBot { get; set; }
 
     
-    public List<FriendshipTbl> Friends { get; set; } = [];
+    public List<FriendshipTbl>? Friends { get; set; } = [];
 
 }
