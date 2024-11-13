@@ -5,6 +5,9 @@ namespace BeeDraw.Database.Models;
 public class LotteryTbl:EntityBase
 {
     public required string Name { get; set; }  
+    public required string ImageName { get; set; }  
+    public required string ShortMessage { get; set; }  
+
     public DateTime StartDate { get; set; }  
     public DateTime EndDate { get; set; } 
     public bool IsActive { get; set; } 
