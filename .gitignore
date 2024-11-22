@@ -1,13 +1,18 @@
 .[suo]
 
+.vs
+
 BeeDraw/bin
 BeeDraw/obj
 BeeDraw/.vs
+BeeDraw/BeeDraw.csproj.user
 
 BeeDraw.Core/bin
 BeeDraw.Core/obj
 BeeDraw.Core/.vs
+BeeDraw.Core/BeeDraw.Core.csproj.user
 
 BeeDraw.Database/bin
 BeeDraw.Database/obj
 BeeDraw.Database/.vs
+BeeDraw.Database/BeeDraw.Database.csproj.user
