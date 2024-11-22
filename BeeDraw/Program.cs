@@ -36,7 +36,7 @@ namespace BeeDraw
             app.UseStaticFiles();
             app.UseAntiforgery();
 
-            app.MapRazorComponents<App>();
+            app.MapRazorComponents<Routes>();
 
             app.Run();
         }
