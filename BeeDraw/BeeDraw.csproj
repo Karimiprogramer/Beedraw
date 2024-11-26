@@ -7,11 +7,28 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\css\app.css" />
+    <Compile Remove="wwwroot\css\**" />
+    <Content Remove="wwwroot\css\**" />
+    <EmbeddedResource Remove="wwwroot\css\**" />
+    <None Remove="wwwroot\css\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Telegram.Bot" Version="22.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BeeDraw.Core\BeeDraw.Core.csproj" />
+    <ProjectReference Include="..\BeeDraw.Database\BeeDraw.Database.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Components\Shared\Bot\Lotteries\" />
   </ItemGroup>
 
 </Project>
