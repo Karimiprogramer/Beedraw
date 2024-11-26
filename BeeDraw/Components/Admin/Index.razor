@@ -1,5 +1,71 @@
-﻿<h3>Index</h3>
-
+﻿@page "/admin"
+@layout AdminLayout
 @code {
-
+    [Inject]
+    BeeDraw.Core.Services.Interfaces.User.IUserService UserService { get; set; }
 }
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/Bot/images/banner/Firefly 20241016033807.png" alt="Los Angeles" class="d-block w-100">
+            <div class="carousel-caption">
+                <p>Welcome to BeeDraw</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="/Bot/images/banner/Firefly 20241016033807.png" alt="Chicago" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="/Bot/images/banner/Firefly 20241016033807.png" alt="New York" class="d-block w-100">
+        </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-dark text-bg-dark">Users</div>
+            <div class="card-body">Manage users easily with beedraw admin panel</div>
+            <div class="card-footer">
+                <a class="btn btn-primary" href="/admin/user">Manage</a>
+                <span>Your currently connected wallets : 12</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-dark text-bg-dark">Lotteries</div>
+            <div class="card-body">Manage lotteries easily with beedraw admin panel</div>
+            <div class="card-footer">
+                <a class="btn btn-primary" href="/admin/lottery">Manage</a>
+                <span>Your currently connected lotteries : 12</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-dark text-bg-dark">Wallets</div>
+            <div class="card-body">Manage user wallets easily with beedraw admin panel</div>
+            <div class="card-footer">
+                <a class="btn btn-primary" href="/admin/wallet">Manage</a>
+                <span>Your currently connected wallets : 12</span>
+            </div>
+        </div>
+    </div>
+</div>

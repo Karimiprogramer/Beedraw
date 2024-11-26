@@ -1,5 +1,28 @@
-﻿<h3>Index</h3>
+﻿@page "/admin/user/"
+@layout AdminLayout
 
-@code {
-
-}
+<button class="btn btn-success"><span>Add New User</span></button>
+<div class="responsive">
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>TG Id</th>
+                    <th>Phone Number</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>6401293316</td>
+                    <td>M . Karimi</td>
+                    <td>@@mmxkarimi</td>
+                    <td>+989908804652</td>
+                    <td><button class="btn btn-danger">Remove</button><button class="btn btn-primary"><span>Edit</span></button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

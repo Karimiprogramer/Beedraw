@@ -1,126 +1,38 @@
-﻿@page "/admin"
-@using BeeDraw.Components.Layout
+﻿@page "/admin/lottery/"
 @layout AdminLayout
-<nav class="left">
-    <a>
-        <i>home</i>
-        <div>Home</div>
-    </a>
-    <a>
-        <i>casino</i>
-        <div>Lottories</div>
-    </a>
-    <a>
-        <i>person</i>
-        <div>Users</div>
-    </a>
-    <a>
-        <i>account_balance_wallet</i>
-        <div>Wallets</div>
-    </a>
-</nav>
-<main >
-    <div class="row scroll">
-        <article class="no-padding border">
-            <img class="responsive medium" src="/Bot/images/banner/Firefly 20241016033807.png">
-            <div class="absolute bottom left right padding bottom-shadow white-text">
-                <nav>
-                    <h5>Title</h5>
-                    <div class="max"></div>
-                    <button class="circle transparent">
-                        <i>more_vert</i>
-                    </button>
-                </nav>
-            </div>
-        </article>   
-        <article class="no-padding border">
-            <img class="responsive medium" src="/Bot/images/banner/Firefly 20241016033807.png">
-            <div class="absolute bottom left right padding bottom-shadow white-text">
-                <nav>
-                    <h5>Title</h5>
-                    <div class="max"></div>
-                    <button class="circle transparent">
-                        <i>more_vert</i>
-                    </button>
-                </nav>
-            </div>
-        </article>     
-        <article class="no-padding border">
-            <img class="responsive medium" src="/Bot/images/banner/Firefly 20241016033807.png">
-            <div class="absolute bottom left right padding bottom-shadow white-text">
-                <nav>
-                    <h5>Title</h5>
-                    <div class="max"></div>
-                    <button class="circle transparent">
-                        <i>more_vert</i>
-                    </button>
-                </nav>
-            </div>
-        </article>
+
+<button class="btn btn-success"><span>Add New Lottery</span></button>
+<div class="responsive">
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Active</th>
+                    <th>Tickets</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>444444444444444444444</td>
+                    <td>very big lottery</td>
+                    <td>2022/01/01</td>
+                    <td>2024/01/01</td>
+                    <td><span class="text-success">Active</span></td>
+                    <td><button type="button" class="btn btn-primary" data-placement="top" data-bs-toggle="popover" title="Lottery State" data-bs-content="Total tickets : 12  sold : 6">Toggle popover</button></td>
+                    <td><button class="btn btn-danger">Remove</button><button class="btn btn-primary"><span>Edit</span></button></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <div class="grid">
-        <div class="s12 m6 l3">
-            <article class="round">
-                <div class="row">
-                    <img class="circle large" src="/beer-and-woman.svg">
-                    <div class="max">
-                        <h5>Title</h5>
-                        <p>Some text here</p>
-                    </div>
-                </div>
-                <nav>
-                    <button class=" light-green10">
-                        <i>person_add</i>
-                        <span>Add User</span>
-                    </button>
-                    <button >
-                        <i>manage_accounts</i>
-                        <span>Manage Users</span>
-                    </button>
-                </nav>
-            </article>
-        </div>
-        <div class="s12 m6 l3">
-            <article class="round">
-                <div class="row">
-                    <img class="circle large" src="/beer-and-woman.svg">
-                    <div class="max">
-                        <h5>Title</h5>
-                        <p>Some text here</p>
-                    </div>
-                </div>
-                <nav>
-                    <button>Button</button>
-                </nav>
-            </article>
-        </div>
-        <div class="s12 m6 l3">
-            <article class="round">
-                <div class="row">
-                    <img class="circle large" src="/beer-and-woman.svg">
-                    <div class="max">
-                        <h5>Title</h5>
-                        <p>Some text here</p>
-                    </div>
-                </div>
-                <nav>
-                    <button>Button</button>
-                </nav>
-            </article>
-        </div>
-        <div class="s12 m6 l3">
-            <article class="round">
-                <div class="row">
-                    <img class="circle large" src="/beer-and-woman.svg">
-                    <div class="max">
-                        <h5>Title</h5>
-                        <p>Some text here</p>
-                    </div>
-                </div>
-                <nav>
-                    <button>Button</button>
-                </nav>
-            </article>
-        </div>
-    </div>
-</main>
+</div>
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+</script>
