@@ -1,7 +1,7 @@
 ﻿using BeeDraw.Core.Services.Interfaces.Lottery;
+using BeeDraw.Core.Services.SeedWorks.Base.Implement;
 using BeeDraw.Database.Contexts;
 using BeeDraw.Database.Models.Lottery;
-using Project.Application.Core.Services.SeedWorks.Base.Implement;
 using System;
 using System.Collections.Generic;
 using System.Linq;

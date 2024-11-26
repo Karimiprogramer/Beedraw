@@ -4,7 +4,7 @@ using BeeDraw.Core.Services.Interfaces.Lottery;
 using BeeDraw.Core.Services.Interfaces.User;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Project.Application.Core.Services.SeedWorks.Installer;
+namespace BeeDraw.Core.Services.SeedWorks.Installer;
 
 public static class ServiceInstaller
 {
@@ -23,6 +23,6 @@ public static class ServiceInstaller
             .AddScoped<ITaskCompletionService, TaskCompletionService>()
             .AddScoped<IFriendshipService, FriendshipService>();
 
-            
+
     }
 }

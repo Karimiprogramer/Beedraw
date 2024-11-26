@@ -1,7 +1,7 @@
 ﻿using BeeDraw.Core.Services.Interfaces.Wallet;
+using BeeDraw.Core.Services.SeedWorks.Base.Implement;
 using BeeDraw.Database.Contexts;
 using BeeDraw.Database.Models.Wallet;
-using Project.Application.Core.Services.SeedWorks.Base.Implement;
 using System;
 using System.Collections.Generic;
 using System.Linq;

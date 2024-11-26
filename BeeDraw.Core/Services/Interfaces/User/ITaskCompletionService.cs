@@ -1,5 +1,5 @@
-﻿using BeeDraw.Database.Models.User;
-using Project.Application.Core.Services.SeedWorks.Base.Interface;
+﻿using BeeDraw.Core.Services.SeedWorks.Base.Interface;
+using BeeDraw.Database.Models.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;

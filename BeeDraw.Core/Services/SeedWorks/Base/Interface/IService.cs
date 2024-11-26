@@ -1,5 +1,4 @@
-﻿
-using BeeDraw.Database.SeedWorks.Base;
+﻿using BeeDraw.Database.SeedWorks.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +6,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.Application.Core.Services.SeedWorks.Base.Interface;
+namespace BeeDraw.Core.Services.SeedWorks.Base.Interface;
 
 public interface IService<TModel> : IDisposable where TModel : EntityBase
 {
