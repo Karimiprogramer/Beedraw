@@ -3,13 +3,17 @@ using BeeDraw.Database.SeedWorks.Base;
 
 namespace BeeDraw.Database.Models.User;
 
-public class FriendshipTbl:EntityBase
+public class FriendshipTbl : EntityBase
 {
     public int SenderId { get; set; }
-    [ForeignKey("SenderId")]
-    public UserTbl? User { get; set; }
+
+    [ForeignKey(nameof(SenderId))]
+    [InverseProperty("SentFriendRequests")]
+    public UserTbl Sender { get; set; } = null!;
 
     public int ReceiverId { get; set; }
-    [ForeignKey("ReceiverId")]
-    public UserTbl? Friend { get; set; }
+
+    [ForeignKey(nameof(ReceiverId))]
+    [InverseProperty("ReceivedFriendRequests")]
+    public UserTbl Receiver { get; set; } = null!;
 }

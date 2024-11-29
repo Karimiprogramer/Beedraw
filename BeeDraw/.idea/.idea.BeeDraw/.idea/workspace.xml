@@ -9,7 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30b64192-cb57-4ae2-911d-0e401473fb2f" name="Changes" comment="" />
+    <list default="true" id="30b64192-cb57-4ae2-911d-0e401473fb2f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../BeeDraw.Database/Models/User/FriendshipTbl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../BeeDraw.Database/Models/User/FriendshipTbl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeeDraw.Database/Models/User/UserTbl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../BeeDraw.Database/Models/User/UserTbl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BeeDraw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BeeDraw/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +61,7 @@
     &quot;.NET Launch Settings Profile.BeeDraw: IIS Express.executor&quot;: &quot;Run&quot;,
     &quot;.NET Launch Settings Profile.BeeDraw: https.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;adnan's-branch&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -124,6 +128,8 @@
       <workItem from="1731335694569" duration="8121000" />
       <workItem from="1731501559393" duration="5458000" />
       <workItem from="1731560520294" duration="391000" />
+      <workItem from="1732896461708" duration="992000" />
+      <workItem from="1732902542144" duration="314000" />
     </task>
     <task id="LOCAL-00001" summary="userTbl and FriendsTbl">
       <option name="closed" value="true" />
@@ -165,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731506300181</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Merge branch 'adnan's-branch'">
+      <option name="closed" value="true" />
+      <created>1731561471836</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731561471836</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +232,8 @@
     <MESSAGE value="tasks" />
     <MESSAGE value="context" />
     <MESSAGE value="final" />
-    <option name="LAST_COMMIT_MESSAGE" value="final" />
+    <MESSAGE value="finaaal" />
+    <MESSAGE value="Merge branch 'adnan's-branch'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'adnan's-branch'" />
   </component>
 </project>

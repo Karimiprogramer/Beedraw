@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using BeeDraw.Database.SeedWorks.Base;
 
 namespace BeeDraw.Database.Models.User;
@@ -35,7 +36,7 @@ public class UserTbl:EntityBase
     public bool IsDeleted { get; set; } = false;
     public bool IsBot { get; set; }
 
-    
-    public List<FriendshipTbl>? Friends { get; set; } = [];
+    [InverseProperty("Sender")]
+    public List<FriendshipTbl> SentFriendRequests { get; set; } = new();
 
 }
