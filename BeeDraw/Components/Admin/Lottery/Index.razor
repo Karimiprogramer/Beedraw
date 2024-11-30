@@ -1,0 +1,38 @@
+﻿@page "/admin/lottery/"
+@layout AdminLayout
+
+<button class="btn btn-success"><span>Add New Lottery</span></button>
+<div class="responsive">
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Active</th>
+                    <th>Tickets</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>444444444444444444444</td>
+                    <td>very big lottery</td>
+                    <td>2022/01/01</td>
+                    <td>2024/01/01</td>
+                    <td><span class="text-success">Active</span></td>
+                    <td><button type="button" class="btn btn-primary" data-placement="top" data-bs-toggle="popover" title="Lottery State" data-bs-content="Total tickets : 12  sold : 6">Toggle popover</button></td>
+                    <td><button class="btn btn-danger">Remove</button><button class="btn btn-primary"><span>Edit</span></button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+</script>

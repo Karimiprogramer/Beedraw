@@ -1,12 +1,12 @@
 ﻿using BeeDraw.Database.Contexts;
 using Microsoft.EntityFrameworkCore.Internal;
 using Microsoft.EntityFrameworkCore;
-using Project.Application.Core.Services.SeedWorks.Base.Interface;
 using System.Linq.Expressions;
+using BeeDraw.Core.Services.SeedWorks.Base.Interface;
 
-namespace Project.Application.Core.Services.SeedWorks.Base.Implement;
+namespace BeeDraw.Core.Services.SeedWorks.Base.Implement;
 
-public class Service<TModel>(ApplicationDbContext _context) : IService<TModel> where TModel : BeeDraw.Database.SeedWorks.Base.EntityBase
+public class Service<TModel>(ApplicationDbContext _context) : IService<TModel> where TModel : Database.SeedWorks.Base.EntityBase
 {
     private DbSet<TModel> Entities => _context.Set<TModel>();
 
