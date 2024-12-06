@@ -5,13 +5,13 @@ namespace BeeDraw.Database.Models.User;
 
 public class FriendshipTbl : EntityBase
 {
-    public int SenderId { get; set; }
+    public long SenderId { get; set; }
 
     [ForeignKey(nameof(SenderId))]
     [InverseProperty("SentFriendRequests")]
     public UserTbl Sender { get; set; } = null!;
 
-    public int ReceiverId { get; set; }
+    public long ReceiverId { get; set; }
 
     [ForeignKey(nameof(ReceiverId))]
     [InverseProperty("ReceivedFriendRequests")]
