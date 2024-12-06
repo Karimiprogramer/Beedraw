@@ -16,3 +16,8 @@ BeeDraw.Database/bin
 BeeDraw.Database/obj
 BeeDraw.Database/.vs
 BeeDraw.Database/BeeDraw.Database.csproj.user
+
+BeeDraw.Admin/bin
+BeeDraw.Admin/obj
+BeeDraw.Admin/.vs
+BeeDraw.Admin/BeeDraw.Admin.csproj.user

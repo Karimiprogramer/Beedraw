@@ -1,7 +1,9 @@
 ﻿using BeeDraw.Core.Services.Implementers.Lottery;
 using BeeDraw.Core.Services.Implementers.User;
+using BeeDraw.Core.Services.Implementers.Wallet;
 using BeeDraw.Core.Services.Interfaces.Lottery;
 using BeeDraw.Core.Services.Interfaces.User;
+using BeeDraw.Core.Services.Interfaces.Wallet;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace BeeDraw.Core.Services.SeedWorks.Installer;
@@ -21,7 +23,13 @@ public static class ServiceInstaller
             .AddScoped<IUserService, UserService>()
             .AddScoped<ITaskService, TaskService>()
             .AddScoped<ITaskCompletionService, TaskCompletionService>()
-            .AddScoped<IFriendshipService, FriendshipService>();
+            .AddScoped<IFriendshipService, FriendshipService>()
+
+            /*Add Wallet Services*/
+
+            .AddScoped<ICurrencyService, CurrencyService>()
+            .AddScoped<IWalletBalanceService, WalletBalanceService>()
+            .AddScoped<IWalletService, WalletService>();
 
 
     }
