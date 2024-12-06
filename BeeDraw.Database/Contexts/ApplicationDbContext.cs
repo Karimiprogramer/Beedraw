@@ -24,7 +24,11 @@ namespace BeeDraw.Database.Contexts
         public DbSet<WalletBalanceTbl> WalletBalanceTbl { get; set; }
         public DbSet<WalletTbl> WalletTbl { get; set; }
 
-
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=BeeDraw;Integrated Security=True;TrustServerCertificate=True;MultipleActiveResultSets=true;");
+            base.OnConfiguring(optionsBuilder);
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<UserTbl>().HasQueryFilter(u => !u.IsDeleted);

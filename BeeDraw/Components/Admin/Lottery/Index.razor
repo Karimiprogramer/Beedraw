@@ -1,7 +1,7 @@
 ﻿@page "/admin/lottery/"
 @layout AdminLayout
-
-<button class="btn btn-success"><span>Add New Lottery</span></button>
+@rendermode InteractiveServer
+<button class="btn btn-success" @onclick=OpenAddDialog><span>Add New Lottery</span></button>
 <div class="responsive">
     <div class="table-responsive">
         <table class="table table-hover">

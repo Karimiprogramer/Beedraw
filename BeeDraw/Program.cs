@@ -11,7 +11,8 @@ namespace BeeDraw
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            builder.Services.AddRazorComponents();
+            builder.Services.AddRazorComponents()
+                .AddInteractiveServerComponents();
             builder.Services.AddDbContext<ApplicationDbContext>(op => op.UseSqlServer(builder.Configuration.GetConnectionString("devel")));
             builder.Services.AddBeeDrawServices();
             var app = builder.Build();
@@ -29,7 +30,8 @@ namespace BeeDraw
             app.UseStaticFiles();
             app.UseAntiforgery();
 
-            app.MapRazorComponents<Routes>();
+            app.MapRazorComponents<Routes>()
+                .AddInteractiveServerRenderMode();
 
             app.Run();
         }
